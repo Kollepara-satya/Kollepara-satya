@@ -1,0 +1,31 @@
+#program for super market bill
+rc=100
+sc=30
+oc=120
+bc=50
+dc=60
+cname=input('enter customer name:')
+cphon=input('enter customer number:')
+caddr=input('enter customer address:')
+R=int(input('How many kgs of rice you want:'))
+S=int(input('How many soaps do you want'))
+O=int(input('How many litres of oil you want'))
+B=int(input('How many bread packets do you want:'))
+D=int(input('How many kgs of dal do you want'))
+Bill=(rc*R)+(sc*S)+(oc*O)+(bc*B)+(dc*D)
+if Bill>3000:
+    tax=Bill*5/100
+elif Bill>2000:
+    tax=Bill*7/100
+elif Bill>1000:
+    tax=Bill*10/100
+elif Bill>500:
+    tax=Bill*15/100
+else:
+    tax=100
+bill=Bill+tax
+print('customer name:',cname)
+print('customer number:',cphon)
+print('Bill without tax:',Bill)
+print('Tax:',tax)
+print('Bill amount:',bill)
