@@ -1,0 +1,14 @@
+U=int(input('enter number of units'))
+if U>0 and U<30:
+    bill=U*25
+elif 31<U<75:
+    bill=U*30
+elif 76<U<125:
+    bill=U*45
+elif 126<U<225:
+    bill=U*50
+elif 226<U<400:
+    bill=U*55
+else:
+    bill=U*60
+print('ELECTRICITY BILL=',bill)    
